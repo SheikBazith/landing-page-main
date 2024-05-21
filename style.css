@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    /*Neutral*/
+    --black: #263238;
+    --d_grey: #4D4D4D;
+    --grey: #717171;
+    --l_grey: #89939E;
+    --grey_blue: #ABBED1;
+    --silver: #F5F7FA;
+    --white: #FFFFFF;
+
+
+    --p_green: #4caf4f;
+    --s_black: #263238;
+    --info: #2194F3;
+
+    /*Comor Shade*/
+
+    --shade1: #43A046;
+    --shade2: #388E3B;
+    --shade3: #237D31;
+    --shade4: #1B5E1F;
+    --shade5: #103E13;
+
+    /*Color Tint*/
+    --tint1: #66BB69;
+    --tint2: #81C784;
+    --tint3: #A5D6A7;
+    --tint4: #C8E6C9;
+    --tint5: #E8F5E9;
+
+    /*Action*/
+    --warning: #FBC02D;
+    --error: #E53835;
+    --success: #2E7D31;
+
+    /*Font*/
+    --inter: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--inter);
+}
+
+
+header{
+    padding-top: 2rem;
+}
+
+.btn {
+    background-color: var(--p_green);
+    color: var(--white);
+    border: none;
+    width: 120px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--shade1);
+}
+
+a:hover {
+    color: var(--l_grey);
+    font-weight: bolder;
+}
+
+section{
+    padding: 2rem 5rem 3rem 6.6rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.intro-page,.stat-page{
+    background-color: var(--silver);
+}
+
+h1{
+    font-family: var(--inter);
+    font-size: 44.5px;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+
+span{
+    color: var(--p_green);
+}
+
+p{
+    font-size: 18px;
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.client-page{
+    text-align: center;
+    line-height: 2rem;
+}
+
+h2,h3,h4{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--d_grey);
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+
+.client-feature > div {
+    box-shadow: 4px 4px 10px #ABBED1;
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+.client-feature > div > img {
+    width: 80px;
+}
+
+.marketing-page{
+    text-align: center;
+}
+
+.market-container{
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.para-box{
+    position: relative;
+    background-color: var(--silver);
+    box-shadow: 4px 4px 10px #ABBED1;;
+    border-radius: 10px;
+    max-width: 400px;
+    max-height: 200px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 5rem;
+    gap: 1.5rem;
+}
+
+#market-para{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+footer{
+    padding: 2rem 15rem 2rem 15rem;
+    background-color: var(--silver);
+}
+
+
+
+
