@@ -1,192 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@tailwind base;
-@import "style.css";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexcent</title>
+    <link rel="icon" type="image/x-icon" href="/images/Icon.png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">   
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="flex flex-col items-center justify-center gap-5  md:flex-row md:justify-around">
+        <div><img id="logo" src="images/Logo.png"></div>
+        <div>
+            <ul class="flex items-center gap-5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><button class="btn">Register Now</button></li>
+            </ul>
+        </div>
+    </header>
 
-:root{
-    /*Neutral*/
-    --black: #263238;
-    --d_grey: #4D4D4D;
-    --grey: #717171;
-    --l_grey: #89939E;
-    --grey_blue: #ABBED1;
-    --silver: #F5F7FA;
-    --white: #FFFFFF;
+        <section class="intro-page flex flex-col md:flex-row md:items-center md:justify-around md:pt-24 md:pb-24 gap-5">
+            <div class="intro-para text-center md:text-left">
+                <h1 class="heading-text md:text-6xl">Lessons and insights <br><span>from 8 years</span></h1>
+                <p class="text-center">Where to grow your business as a photographer: site or social media?</p>
+                <button class="btn mt-8">Register</button>
+            </div>
+            <div class="intro-img pt-12">
+                <img class="md:w-[500px]" src="images/illustration/Illustration1.png">
+            </div>
+        </section>
 
+        <section class="client-page">
+            <h2 class="sub-header">Our Clients</h2>
+            <p class="md:text-center">We have been working with some Fortune 500+ clients</p>
+            <img src="images/Clients Logos.png">
+            <h2 class="sub-header">Manage your entire community <br> in a single system</h2>
+            <p class="mb-8 text-center">Who is Nextcent suitable for?</p>
+            <div class="client-feature flex flex-col gap-12 md:flex-row mt-12">
+                <div class="flex flex-col items-center">
+                    <img src="images/icons/lg-icon/people.png">
+                    <h3 class="sub-header">Membership Organisations</h3>
+                    <p class="text-center">Our membership management software provides full automation of membership renewals and payments</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="images/icons/lg-icon/building.png">
+                    <h3 class="sub-header">National<br> Associations</h3>
+                    <p class="text-center">Our membership management software provides full automation of membership renewals and payments</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="images/icons/lg-icon/hand.png">
+                    <h3 class="sub-header">Clubs And<br> Groups</h3>
+                    <p class="text-center">Our membership management software provides full automation of membership renewals and payments</p>
+                </div>
+            </div>
+        </section>
 
-    --p_green: #4caf4f;
-    --s_black: #263238;
-    --info: #2194F3;
+        <section class="md:flex md:items-center md:justify-around">
+            <img src="images/illustration/rafiki.png">
+            <div class="md:text-left">
+                <h4 class="sub-header">The unseen of spending three years at Pixelgrade</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                <br><button class="btn">Learn More</button>
+            </div>
+        </section>
 
-    /*Comor Shade*/
+        <section class="stat-page md:flex md:items-center md:justify-around md:pt-24 md:pb-24">
+            <div class="md:text-left">
+                <h4 class="sub-header">Helping a local <br><span>business reinvent itself</span></h4>
+                <p>We reached here with our hard work and dedication</p>
+            </div>
+            <div class="stat-grid flex flex-col gap-12 mt-8 md:grid md:grid-cols-2">
+                <div class="flex flex-col items-center md:flex-row gap-6">
+                    <img src="images/icons/sm-icons/people.png">
+                    <div class="md:text-left">
+                        <h5>2,245,341</h5>
+                        <p class ="text-center">Members</p>
+                    </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center md:flex-row gap-6">
+                        <img src="images/icons/sm-icons/hand.png">
+                        <div class="md:text-left">
+                            <h5>246,328</h5>
+                            <p class ="text-center md:text-left">Clubs</p>
+                        </div>
+                </div>
+                
+                <div class="flex flex-col items-center justify-center md:flex-row gap-6">
+                    <img src="images/icons/sm-icons/Vector.png">
+                    <div class="md:text-left">
+                        <h5>828,867</h5>
+                        <p class ="text-center">Event Bookings</p>
+                    </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center md:flex-row gap-6">
+                        <img src="images/icons/sm-icons/pay.png">
+                        <div class="md:text-left">
+                            <h5>1,926,436</h5>
+                            <p class ="text-center">Payments</p>
+                        </div>
+                    </div>
+           
+            </div>
+        </section>
 
-    --shade1: #43A046;
-    --shade2: #388E3B;
-    --shade3: #237D31;
-    --shade4: #1B5E1F;
-    --shade5: #103E13;
+        <section class="md:flex md:items-center md:justify-around">
+            <img src="images/illustration/pana.png">
+            <div class="md:text-left">
+                <h4 class="sub-header">How to design your site footer like we did</h4>
+                <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+                <br><button class="btn">Learn More</button>
+            </div>
+        </section>
 
-    /*Color Tint*/
-    --tint1: #66BB69;
-    --tint2: #81C784;
-    --tint3: #A5D6A7;
-    --tint4: #C8E6C9;
-    --tint5: #E8F5E9;
+        <section style="background-color:#F5F7FA;" class="pixel-grade-page flex flex-col md:flex-row md:items-center md:justify-center md:text-left">
+            <img src="images/image 9.png">
+            <div>
+                <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+                <br>
+                <h6 style="color: #4caf4f; font-weight: bold;font-size: 18px;">Tim Smith</h6><br>
+                <p class="md:text-left text-center">British Dragon Boat Racing Association</p><br>
+                <div class="flex flex-col md:flex-row gap-12 ">
+                    <img src="images/Frame 10.png">
+                    <button class="customer-btn">Meet all customers</button>
+                </div>
+                
+            </div>
+        </section>
 
-    /*Action*/
-    --warning: #FBC02D;
-    --error: #E53835;
-    --success: #2E7D31;
+        <section class="marketing-page">
+            <h5 class="sub-header">Caring is the new marketing</h5>
+            <p>The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+            <div class="market-container flex flex-col md:flex-row"> 
+            <div class="market-center flex flex-col items-center justify-center">
+                    <div><img src="images/illustration/image 18.png" alt=""></div>
+                    <div class="para-box"> 
+                        <p id="market-para">Creating Streamlined Safeguarding Processes with OneRen</p>
+                    <button style="float: none; ;" class="customer-btn">Readmore</button>
+                    </div>
+                </div>
+                    <div class="market-center flex flex-col items-center justify-center">
+                        <img src="images/illustration/image 19.png" alt="">   
+                        <div class="para-box">
+                            <p id="market-para">What are your safeguarding responsibilities and how can you manage them?</p>
+                        <button style="float: none; ;" class="customer-btn">Readmore</button>
+                        </div>                           
+                    </div>
+                <div class="market-center flex flex-col items-center justify-center">
+                    <img src="images/illustration/image 20.png" alt="">
+                    <div class="para-box">
+                        <p id="market-para">Revamping the Membership Model with Triathlon Australia</p>
+                        <button style="float: none;" class="customer-btn">Readmore</button>
+                    </div>
+                </div> 
+            </div>   
+        </section>
 
-    /*Font*/
-    --inter: 'Inter', sans-serif;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    </main>
 
-body{
-    font-family: var(--inter);
-
-}
-
-
-header{
-    padding-top: 2rem;
-}
-
-.btn {
-    background-color: var(--p_green);
-    color: var(--white);
-    border: none;
-    width: 120px;
-    height: 60px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background-color: var(--shade1);
-}
-
-a:hover {
-    color: var(--l_grey);
-    font-weight: bolder;
-}
-
-section{
-    padding: 2rem 5rem 3rem 5rem;
-    width: 100%;
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.intro-page,.stat-page{
-    background-color: var(--silver);
-}
-
-.heading-text{
-    font-size: 44.5px;
-    font-weight: bolder;
-    padding-bottom: 1rem;
-}
-
-span{
-    color: var(--p_green);
-}
-
-p{
-    font-size: 18px;
-    color: var(--grey);
-    font-weight: bold;
-    text-align: justify;
-}
-
-.client-page{
-    text-align: center;
-    line-height: 2rem;
-}
-
-.sub-header{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: var(--d_grey);
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 3rem;
-}
-
-
-.client-feature > div {
-    box-shadow: 4px 4px 10px #ABBED1;
-    border-radius: 5px;
-    padding: 3rem;
-}
-
-.client-feature > div > img {
-    width: 80px;
-}
-
-.marketing-page{
-    text-align: center;
-}
-
-.market-container{
-    display: flex;
-    gap: 2rem;
-    padding-top: 2rem;
-}
-
-.para-box{
-    position: relative;
-    background-color: var(--silver);
-    box-shadow: 4px 4px 10px #ABBED1;;
-    border-radius: 10px;
-    max-width: 350px;
-    max-height: 200px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    bottom: 5rem;
-    gap: 1.5rem;
-}
-
-#market-para{
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-
-footer{
-    padding: 2rem 15rem 2rem 15rem;
-    background-color: var(--silver);
-}
-
-@media (min-width:100px) and (max-width:668px) {
-    body{
-        width: 100vh;
-        height: 100vh;
-    }
+    <footer>
+        <div><img src="images/Logo.png"></div>
+    </footer>
     
-}
+    
+</body>
 
-@media (min-width:700px) and (max-width:668px){
-    section{
-        padding: 2rem 12rem 3rem 12rem;
-    }
-}
-
-.customer-btn{
-    color: var(--p_green);
-    font-weight: bold;
-}
-
-.customer-btn:hover{
-    color: var(--shade4);
-}
-
+</html>
