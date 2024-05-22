@@ -146,7 +146,7 @@ p{
     box-shadow: 4px 4px 10px #ABBED1;;
     border-radius: 10px;
     max-width: 350px;
-    max-height: 200px;
+    height: 200px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -175,7 +175,7 @@ footer{
     
 }
 
-@media (min-width:700px) and (max-width:668px){
+@media (min-width:700px){
     section{
         padding: 2rem 12rem 3rem 12rem;
     }
