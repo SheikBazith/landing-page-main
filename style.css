@@ -102,6 +102,7 @@ p{
     font-size: 18px;
     color: var(--grey);
     font-weight: bold;
+    text-align: justify;
 }
 
 .client-page{
@@ -144,7 +145,7 @@ p{
     background-color: var(--silver);
     box-shadow: 4px 4px 10px #ABBED1;;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 350px;
     max-height: 200px;
     padding: 2rem;
     display: flex;
@@ -156,8 +157,9 @@ p{
 }
 
 #market-para{
-    font-size: 23px;
+    font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
 footer{
@@ -170,12 +172,21 @@ footer{
         width: 100vh;
         height: 100vh;
     }
+    
+}
+
+@media (min-width:700px) and (max-width:668px){
+    section{
+        padding: 2rem 12rem 3rem 12rem;
+    }
 }
 
 .customer-btn{
     color: var(--p_green);
+    font-weight: bold;
 }
 
 .customer-btn:hover{
     color: var(--shade4);
 }
+
