@@ -46,6 +46,8 @@
 
 body{
     font-family: var(--inter);
+    width: 100vh;
+    height: 100vh;
 }
 
 
